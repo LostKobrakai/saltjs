@@ -12,5 +12,5 @@ window.$ = function(selector, ele) {
   var container = ele instanceof Element ? ele : document;
   var el = (container[matches](selector.slice(1)));
   // if there is one element than return the 0 element
-  return ((el.length < 2) ? el[0]: el);
+  return el;
 };
